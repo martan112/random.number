@@ -1,0 +1,10 @@
+{block content}
+
+<h1 n:block=title>Welcome to Nette Framework!</h1>
+
+{snippet pleaseReload}
+	{var $randomNumber = rand(1, 100)}
+	<p>Your random number is: {$randomNumber}</p>
+{/snippet}
+
+<a n:href="generateRandomNumber!" class="ajax">Generuj Ajaxově!</a>
